@@ -36,6 +36,12 @@ public class Crab extends Actor
         {
             removeTouching(Worm.class);
         }  
+    
+        if(isTouching(Lobster.class))
+        {
+        Greenfoot.playSound("au.wav");
+        Greenfoot.stop();
+        }
     }
 }
 
