@@ -12,20 +12,30 @@ public class Crab extends Actor
         checkKeyPress();
         onCollision(); 
     }
-    private boolean turnAtEdge()
+    private void turnAtEdge()
     {
-        if(false)
+        if(isAtEdge())
         {
-            turn(-50);
+            turn(50);
         }
     }
     private void checkKeyPress()
     {
-        
+        if(Greenfoot.isKeyDown("right"))
+        {
+            turn(4);
+        }
+        if(Greenfoot.isKeyDown("left"))
+        {
+            turn(-4);
+        }
     }
     private void onCollision()
     {
-        
+        if(isTouching(Worm.class))
+        {
+            removeTouching(Worm.class);
+        }  
     }
 }
 
