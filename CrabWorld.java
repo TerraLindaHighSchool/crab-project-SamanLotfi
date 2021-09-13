@@ -8,7 +8,7 @@ public class CrabWorld extends World
      */
     public CrabWorld() 
     {
-        super(560, 560, 1);
+        super(1000, 880, 1);
         prepare();
     }
     
@@ -55,5 +55,12 @@ public class CrabWorld extends World
         removeObject(worm13);
         removeObject(worm11);
         removeObject(worm7);
+        crab.setLocation(572,329);
+        lobster.setLocation(332,333);
+        worm2.setLocation(346,127);
+        worm.setLocation(708,468);
+        worm9.setLocation(830,417);
+        lobster.setLocation(745,368);
+        worm9.setLocation(734,384);
     }
 }
