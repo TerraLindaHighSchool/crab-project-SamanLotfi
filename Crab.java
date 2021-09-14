@@ -7,7 +7,7 @@ public class Crab extends Actor
 {
     public void act()
     {
-        move(3);
+        move(4);
         turnAtEdge();
         checkKeyPress();
         onCollision(); 
@@ -36,11 +36,10 @@ public class Crab extends Actor
         {
             removeTouching(Worm.class);
             Greenfoot.playSound("slurp.wav");
-            System.out.println("I just touched a worm");
             if(getWorld().getObjects(Worm.class).size() == 0)
             {
                 Greenfoot.setWorld(new WinSplash());
-                Greenfoot.playSound("fanfare.wav");
+                Greenfoot.playSound("victory.wav");
                 Greenfoot.stop();
 
             }
@@ -48,8 +47,8 @@ public class Crab extends Actor
     
         if(isTouching(Lobster.class))
         {
-        Greenfoot.playSound("au.wav");
-        Greenfoot.stop();
+        Greenfoot.playSound("lose.wav");
+        Greenfoot.setWorld(new lose());
         }
     }
 }

@@ -8,7 +8,7 @@ public class CrabWorld extends World
      */
     public CrabWorld() 
     {
-        super(1000, 880, 1);
+        super(640, 640, 1);
         prepare();
     }
     
@@ -62,5 +62,64 @@ public class CrabWorld extends World
         worm9.setLocation(830,417);
         lobster.setLocation(745,368);
         worm9.setLocation(734,384);
+        worm.setLocation(576,516);
+        worm9.setLocation(791,214);
+        worm9.setLocation(860,421);
+        worm.setLocation(631,608);
+        worm4.setLocation(380,510);
+        worm8.setLocation(148,589);
+        worm14.setLocation(120,364);
+        worm8.setLocation(116,624);
+        worm4.setLocation(372,551);
+        worm12.setLocation(327,363);
+        worm3.setLocation(596,80);
+        worm6.setLocation(151,85);
+        lobster.setLocation(895,80);
+        crab.setLocation(584,364);
+        Worm worm15 = new Worm();
+        addObject(worm15,204,220);
+        Worm worm16 = new Worm();
+        addObject(worm16,475,219);
+        Worm worm17 = new Worm();
+        addObject(worm17,210,492);
+        Worm worm18 = new Worm();
+        addObject(worm18,862,641);
+        Worm worm19 = new Worm();
+        addObject(worm19,747,201);
+        Worm worm20 = new Worm();
+        addObject(worm20,420,702);
+        worm6.setLocation(93,68);
+        lobster.setLocation(499,70);
+        worm.setLocation(567,544);
+        crab.setLocation(224,346);
+        lobster.setLocation(493,83);
+        worm3.setLocation(591,71);
+        worm2.setLocation(304,76);
+        worm15.setLocation(200,184);
+        worm14.setLocation(67,270);
+        worm17.setLocation(87,485);
+        worm8.setLocation(56,632);
+        worm17.setLocation(91,461);
+        worm4.setLocation(193,589);
+        worm20.setLocation(347,508);
+        worm.setLocation(519,578);
+        worm18.setLocation(473,404);
+        worm16.setLocation(342,197);
+        worm3.setLocation(458,270);
+        worm9.setLocation(577,341);
+        worm19.setLocation(569,130);
+        worm4.setLocation(230,480);
+        worm8.setLocation(85,576);
+        removeObject(worm4);
+        removeObject(worm17);
+        removeObject(worm15);
+        removeObject(worm12);
+        worm9.setLocation(108,455);
+        crab.setLocation(258,357);
+        worm3.setLocation(537,294);
+        worm16.setLocation(399,214);
+        worm20.setLocation(236,554);
+        worm18.setLocation(441,446);
+        worm20.setLocation(342,582);
     }
 }
